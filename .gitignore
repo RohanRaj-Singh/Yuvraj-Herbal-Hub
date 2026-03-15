@@ -1,2 +1,49 @@
-/front
-/yuvrajherbal_mystore.sql
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+/public/build
+/public/hot
+
+# Storage
+/public/storage
+/storage/*.key
+
+# Environment files
+.env
+.env.backup
+.env.production
+*.local
+
+# IDE
+.fleet/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log
+yarn-error.log
+
+# Database
+*.sql
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.zip
+*.tar.gz
+
+# PHP
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
