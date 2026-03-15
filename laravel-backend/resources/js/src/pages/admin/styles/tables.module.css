@@ -1,0 +1,151 @@
+/* ==========================================
+   TABLES.MODULE.CSS
+   ========================================== */
+
+.tableContainer {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(78, 52, 46, 0.08);
+  border: 1px solid rgba(141, 110, 99, 0.1);
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dataTable thead {
+  background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%);
+  color: white;
+}
+
+.dataTable th {
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.dataTable tbody tr {
+  border-bottom: 1px solid #efebe9;
+  transition: all 0.3s ease;
+}
+
+.dataTable tbody tr:hover {
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(78, 52, 46, 0.06);
+}
+
+.dataTable td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #4e342e;
+}
+
+.tableImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tableImage:hover {
+  transform: scale(1.8);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.subDataTable {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.subDataTable thead {
+  background: #efebe9;
+  color: #4e342e;
+}
+
+.subDataTable th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.subDataTable td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.itemImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actionsCell {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .tableContainer {
+    overflow-x: auto;
+    border-radius: 16px;
+  }
+
+  .dataTable {
+    min-width: 800px;
+  }
+
+  .dataTable th,
+  .dataTable td {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .tableImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .subDataTable {
+    min-width: 600px;
+  }
+
+  .itemImage {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dataTable th,
+  .dataTable td {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .tableImage {
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -1,0 +1,144 @@
+/* ==========================================
+   MODAL.MODULE.CSS
+   ========================================== */
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(62, 39, 35, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 24px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background: #8d6e63;
+  border-radius: 4px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 32px;
+  border-bottom: 2px solid #efebe9;
+}
+
+.modalHeader h2 {
+  font-size: 26px;
+  color: #4e342e;
+  font-weight: 700;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #795548;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+  background: rgba(141, 110, 99, 0.1);
+  transform: rotate(90deg);
+  color: #4e342e;
+}
+
+.modalForm {
+  padding: 32px;
+}
+
+.modalActions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #efebe9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .modalOverlay {
+    padding: 12px;
+  }
+
+  .modalContent {
+    border-radius: 20px;
+    max-height: 85vh;
+  }
+
+  .modalHeader {
+    padding: 20px 16px;
+  }
+
+  .modalHeader h2 {
+    font-size: 20px;
+  }
+
+  .modalForm {
+    padding: 20px 16px;
+  }
+
+  .modalActions {
+    flex-direction: column;
+  }
+
+  .modalActions button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modalHeader h2 {
+    font-size: 18px;
+  }
+}
