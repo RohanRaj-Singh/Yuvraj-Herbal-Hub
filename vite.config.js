@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/js/src/main.jsx'],
+            input: ['resources/js/app.jsx'],
             refresh: true,
         }),
         react(),
@@ -30,7 +30,9 @@ export default defineConfig({
         },
     },
     build: {
+        manifest: true,
         outDir: 'public/build',
+        emptyOutDir: true,
         rollupOptions: {
             output: {
                 manualChunks(id) {

@@ -1,0 +1,230 @@
+{
+  "_admin.module-91d4e94e.js": {
+    "css": [
+      "assets/admin-e582d141.css"
+    ],
+    "file": "assets/admin.module-91d4e94e.js"
+  },
+  "_charts-1cbcf999.js": {
+    "file": "assets/charts-1cbcf999.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_vendor-4e9e8b77.js"
+    ]
+  },
+  "_icons-7d9b0ce2.js": {
+    "file": "assets/icons-7d9b0ce2.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js"
+    ]
+  },
+  "_react-vendor-bc3a40c2.js": {
+    "file": "assets/react-vendor-bc3a40c2.js"
+  },
+  "_vendor-4e9e8b77.js": {
+    "file": "assets/vendor-4e9e8b77.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js"
+    ]
+  },
+  "admin.css": {
+    "file": "assets/admin-e582d141.css",
+    "src": "admin.css"
+  },
+  "node_modules/xlsx/xlsx.mjs": {
+    "file": "assets/xlsx-6ed613d4.js",
+    "isDynamicEntry": true,
+    "src": "node_modules/xlsx/xlsx.mjs"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-177bab8d.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.jsx": {
+    "css": [
+      "assets/app-177bab8d.css"
+    ],
+    "dynamicImports": [
+      "resources/js/src/pages/admin/components/Sidebar.jsx",
+      "resources/js/src/pages/admin/views/DashboardView.jsx",
+      "resources/js/src/pages/admin/views/BannersView.jsx",
+      "resources/js/src/pages/admin/views/CategoriesView.jsx",
+      "resources/js/src/pages/admin/views/ProductsView.jsx",
+      "resources/js/src/pages/admin/views/OrdersView.jsx",
+      "resources/js/src/pages/admin/views/CustomersView.jsx"
+    ],
+    "file": "assets/app-6de028b9.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_vendor-4e9e8b77.js",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  },
+  "resources/js/src/pages/admin/components/OrderDetails.jsx": {
+    "file": "assets/OrderDetails-f06ba8fb.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_vendor-4e9e8b77.js",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/OrderDetails.jsx"
+  },
+  "resources/js/src/pages/admin/components/ProductModal.jsx": {
+    "file": "assets/ProductModal-1b39e7de.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_vendor-4e9e8b77.js",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/ProductModal.jsx"
+  },
+  "resources/js/src/pages/admin/components/Sidebar.jsx": {
+    "file": "assets/Sidebar-79101bb7.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/Sidebar.jsx"
+  },
+  "resources/js/src/pages/admin/components/charts/ComparisonChart.jsx": {
+    "file": "assets/ComparisonChart-fedfed84.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "_charts-1cbcf999.js",
+      "_vendor-4e9e8b77.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/charts/ComparisonChart.jsx"
+  },
+  "resources/js/src/pages/admin/components/charts/OrdersChart.jsx": {
+    "file": "assets/OrdersChart-d47e6310.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "_charts-1cbcf999.js",
+      "_vendor-4e9e8b77.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/charts/OrdersChart.jsx"
+  },
+  "resources/js/src/pages/admin/components/charts/RevenueChart.jsx": {
+    "file": "assets/RevenueChart-4a4266dd.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "_charts-1cbcf999.js",
+      "_vendor-4e9e8b77.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/charts/RevenueChart.jsx"
+  },
+  "resources/js/src/pages/admin/components/charts/StatusPieChart.jsx": {
+    "file": "assets/StatusPieChart-44f9f38e.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "_charts-1cbcf999.js",
+      "_vendor-4e9e8b77.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/components/charts/StatusPieChart.jsx"
+  },
+  "resources/js/src/pages/admin/views/BannersView.jsx": {
+    "file": "assets/BannersView-8e0a76dd.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_icons-7d9b0ce2.js",
+      "_vendor-4e9e8b77.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/views/BannersView.jsx"
+  },
+  "resources/js/src/pages/admin/views/CategoriesView.jsx": {
+    "file": "assets/CategoriesView-a6781192.js",
+    "imports": [
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_icons-7d9b0ce2.js",
+      "_vendor-4e9e8b77.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/views/CategoriesView.jsx"
+  },
+  "resources/js/src/pages/admin/views/CustomersView.jsx": {
+    "dynamicImports": [
+      "node_modules/xlsx/xlsx.mjs"
+    ],
+    "file": "assets/CustomersView-6bc707fb.js",
+    "imports": [
+      "_vendor-4e9e8b77.js",
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/views/CustomersView.jsx"
+  },
+  "resources/js/src/pages/admin/views/DashboardView.jsx": {
+    "dynamicImports": [
+      "resources/js/src/pages/admin/components/charts/RevenueChart.jsx",
+      "resources/js/src/pages/admin/components/charts/OrdersChart.jsx",
+      "resources/js/src/pages/admin/components/charts/StatusPieChart.jsx",
+      "resources/js/src/pages/admin/components/charts/ComparisonChart.jsx"
+    ],
+    "file": "assets/DashboardView-355ca7f4.js",
+    "imports": [
+      "_vendor-4e9e8b77.js",
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/views/DashboardView.jsx"
+  },
+  "resources/js/src/pages/admin/views/OrdersView.jsx": {
+    "dynamicImports": [
+      "resources/js/src/pages/admin/components/OrderDetails.jsx",
+      "node_modules/xlsx/xlsx.mjs"
+    ],
+    "file": "assets/OrdersView-9d87ba50.js",
+    "imports": [
+      "_vendor-4e9e8b77.js",
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/views/OrdersView.jsx"
+  },
+  "resources/js/src/pages/admin/views/ProductsView.jsx": {
+    "dynamicImports": [
+      "resources/js/src/pages/admin/components/ProductModal.jsx"
+    ],
+    "file": "assets/ProductsView-44f28597.js",
+    "imports": [
+      "_vendor-4e9e8b77.js",
+      "_react-vendor-bc3a40c2.js",
+      "_admin.module-91d4e94e.js",
+      "resources/js/app.jsx",
+      "_icons-7d9b0ce2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/src/pages/admin/views/ProductsView.jsx"
+  }
+}

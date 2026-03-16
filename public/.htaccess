@@ -1,3 +1,10 @@
+<IfModule mod_mime.c>
+    AddType text/javascript .js .mjs
+    AddType text/css .css
+    AddType application/json .json
+    AddType application/wasm .wasm
+</IfModule>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -13,6 +20,12 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
+
+    # Never send compiled assets through Laravel.
+    RewriteRule ^build/ - [L]
+    RewriteRule ^storage/ - [L]
+    RewriteRule ^favicon\.ico$ - [L]
+    RewriteRule ^robots\.txt$ - [L]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

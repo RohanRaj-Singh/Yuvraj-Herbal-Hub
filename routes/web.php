@@ -14,4 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'app');
-Route::view('/{any}', 'app')->where('any', '^(?!api(?:/|$)).*');
+
+Route::fallback(function () {
+    $path = request()->path();
+
+    if (
+        str_starts_with($path, 'api/') ||
+        str_starts_with($path, 'build/') ||
+        str_starts_with($path, 'storage/') ||
+        preg_match('/\.[A-Za-z0-9]+$/', $path)
+    ) {
+        abort(404);
+    }
+
+    return view('app');
+});
