@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import laravel from 'laravel-vite-plugin'
 import vitePluginPreload from 'vite-plugin-preload'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -8,6 +9,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
     plugins: [
+        laravel({
+            input: ['resources/js/src/main.jsx'],
+            refresh: true,
+        }),
         react(),
         vitePluginPreload()
     ],
@@ -16,7 +21,6 @@ export default defineConfig({
             '@': path.resolve(__dirname, 'resources/js/src'),
         },
     },
-    root: '.',
     server: {
         host: '0.0.0.0',
         port: 5173,
@@ -28,7 +32,6 @@ export default defineConfig({
     build: {
         outDir: 'public/build',
         rollupOptions: {
-            input: path.resolve(__dirname, 'index.html'),
             output: {
                 manualChunks(id) {
                     if (!id.includes('node_modules')) return;

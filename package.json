@@ -1,7 +1,9 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "vite --host",
+        "prebuild": "node scripts/preserve-build-assets.mjs",
         "build": "vite build",
         "lint": "eslint .",
         "preview": "vite preview"
